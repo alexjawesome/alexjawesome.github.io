@@ -3,11 +3,11 @@ var rotating = true
 var once = 0
 var stoped = false;
 function rotate(){
-    if (clicks==0 && once ==0){
+    if (once ==0){
         const newButton = document.createElement("button");
         newButton.innerText = "STOP!!!";
-        newButton.onclick = function() { clicks=0;rotating=false;};
-        once++; 
+        newButton.onclick = function() {rotating=false;};
+        
         document.getElementById("butt").appendChild(newButton);
 
         const newButton2 = document.createElement("button");
@@ -15,15 +15,11 @@ function rotate(){
         newButton2.onclick = startRotation;
         once++; 
         document.getElementById("butt").appendChild(newButton2);
-        
+
         const origbutt = document.getElementById("booty");
         origbutt.innerText = "FASTER!!";
     }
 
-    
-    
-
-    console.log(clicks)
     
 
     clicks++;

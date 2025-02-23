@@ -1,6 +1,14 @@
 body {
     background-image: url("assets/back.gif");
+    
   }
 h1,p{
     color: white;
 }
+
+div.bello{
+    width: auto;
+    background: Black;
+    border: 3px solid blue;
+    
+  } 
